@@ -174,6 +174,11 @@ void Processor::LoadFile(const char* file_path)
 			file.close();
 		}
 	}
+	else
+	{
+		cout << "File could not be opened" << endl;
+		exit(1);
+	}
 }
 
 WORD Processor::GetNextInstruction()
